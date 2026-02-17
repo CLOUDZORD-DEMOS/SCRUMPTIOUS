@@ -141,6 +141,15 @@ video {
     border: 1px solid #222;
 }
 
+.reviewer-image img {
+    width: 60px;           /* Fixed width */
+    height: 60px;          /* Fixed height (must match width for a circle) */
+    border-radius: 50%;    /* Makes it a circle */
+    object-fit: cover;     /* IMPORTANT: Crops the image so it doesn't stretch */
+    object-position: center; 
+    border: 2px solid crimson; /* Optional: adds a nice ring around the photo */
+}
+
 .reviewer-info { display: flex; align-items: center; margin-bottom: 15px; }
 .reviewer-image img { width: 50px; height: 50px; border-radius: 50%; margin-right: 15px; }
 .stars { display: flex; gap: 5px; margin-bottom: 10px; }
@@ -186,3 +195,4 @@ footer {
     }
     .nav-links.active { display: flex; }
 }
+
