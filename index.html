@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>SCRUMPTIOUS</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <title>SCRUMPTIOUS | Fine Dining</title>
 </head>
 <body>
     <header>
@@ -31,6 +32,7 @@
             </video>
             <div class="overlay">
                 <h1>SCRUMPTIOUS</h1>
+                <p>Taste the Excellence</p>
             </div>
         </div>
     </section>
@@ -40,18 +42,9 @@
         
         <div class="bar2"><h2>STARTERS</h2></div>
         <div class="image-grid">
-            <div class="image-item">
-                <img src="starter/Starter dragon roll.jpg" alt="Dragon Roll">
-                <p>DRAGON-ROLL</p>
-            </div>
-            <div class="image-item">
-                <img src="starter/Starter Fried Wonton.jpg" alt="Fried Wonton">
-                <p>FRIED-WONTON</p>
-            </div>
-            <div class="image-item">
-                <img src="starter/Starter Risotto balls.jpg" alt="Risotto Balls">
-                <p>RISOTTO-BALLS</p>
-            </div>
+            <div class="image-item"><img src="starter/Starter dragon roll.jpg" alt="Dragon Roll"><p>DRAGON-ROLL</p></div>
+            <div class="image-item"><img src="starter/Starter Fried Wonton.jpg" alt="Fried Wonton"><p>FRIED-WONTON</p></div>
+            <div class="image-item"><img src="starter/Starter Risotto balls.jpg" alt="Risotto Balls"><p>RISOTTO-BALLS</p></div>
         </div>
         
         <div class="bar2"><h2>MAIN COURSE</h2></div>
@@ -70,13 +63,17 @@
             <div class="image-item"><img src="desert/icecream cake.jpeg" alt="Cake"><p>ICECREAM-CAKE</p></div>
             <div class="image-item"><img src="desert/Dessert Dark chocolate Truffle.jpg" alt="Truffle"><p>CHOCOLATE-TRUFFLE</p></div>
         </div>
+
+        <div class="bar2"><h2>DRINKS</h2></div>
+        <div class="image-grid">
+            <div class="image-item"><img src="drinks/mojito.jpg" alt="Mojito"><p>FRESH MOJITO</p></div>
+            <div class="image-item"><img src="drinks/iced-tea.jpg" alt="Iced Tea"><p>PEACH ICED TEA</p></div>
+            <div class="image-item"><img src="drinks/smoothie.jpg" alt="Smoothie"><p>BERRY SMOOTHIE</p></div>
+        </div>
     </section>
 
     <section id="about" class="food-container">
         <div class="bar1"><h1>ABOUT US</h1></div>
-    </section>
-
-    <section class="body3">
         <div class="video-container">
             <video autoplay loop muted playsinline>
                 <source src="lunch_full.mp4" type="video/mp4">
@@ -100,7 +97,29 @@
                 </div>
                 <p class="review-text">Fantastic dining experience! Loved every dish.</p>
             </div>
+
+            <div class="review-item" data-rating="4">
+                <div class="reviewer-info">
+                    <div class="reviewer-image"><img src="reviewer2.jpg" alt="Reviewer"></div>
+                    <div class="reviewer-details"><h3>Rahul Sharma</h3><p>Kolkata, INDIA</p></div>
+                </div>
+                <div class="stars">
+                    <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+                </div>
+                <p class="review-text">The Dimsums are out of this world. Highly recommended!</p>
             </div>
+
+            <div class="review-item" data-rating="5">
+                <div class="reviewer-info">
+                    <div class="reviewer-image"><img src="reviewer3.jpg" alt="Reviewer"></div>
+                    <div class="reviewer-details"><h3>Anita Desai</h3><p>Mumbai, INDIA</p></div>
+                </div>
+                <div class="stars">
+                    <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+                </div>
+                <p class="review-text">Great ambiance and even better service. A must visit.</p>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -110,7 +129,9 @@
             <li><a href="#"><img width="40" height="40" src="twitter.png" alt="TW"></a></li>
         </ul>
         <div class="contact-info">
-            <p>Batanagar, Kolkata | info@scrumptious.com | (+91) 123-456-7890</p>
+            <p>Batanagar, Kolkata</p>
+            <p>Email: info@scrumptious.com</p>
+            <p>Phone: (+91) 123-456-7890</p>
         </div>
     </footer>
 
