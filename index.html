@@ -10,10 +10,15 @@
     <header>
         <nav>
             <div class="logo">Scrumptious</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">Menu</a></li>
-                <li><a href="index.html">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -21,311 +26,91 @@
 
     <section class="body3">
         <div class="video-container">
-            <video autoplay loop muted>
+            <video autoplay loop muted playsinline>
                 <source src="SCRUMPTIOUS.mp4" type="video/mp4">
-                <!-- Add other video formats for cross-browser compatibility if needed -->
             </video>
             <div class="overlay">
-                <h1></h1>
-                <p></p>
+                <h1>SCRUMPTIOUS</h1>
             </div>
         </div>
     </section>
     
-    <section class="food-container">
-        <div class="bar1">
-            <h1>MENU</h1>
-        </div>
+    <section id="menu" class="food-container">
+        <div class="bar1"><h1>MENU</h1></div>
         
-        
-        <div class="bar2">
-            <h2>STARTERS</h2>
-        </div>
+        <div class="bar2"><h2>STARTERS</h2></div>
         <div class="image-grid">
-            
             <div class="image-item">
-                <img src="starter\Starter dragon roll.jpg" alt="Image 1">
+                <img src="starter/Starter dragon roll.jpg" alt="Dragon Roll">
                 <p>DRAGON-ROLL</p>
             </div>
             <div class="image-item">
-                <img src="starter\Starter Fried Wonton.jpg" alt="Image">
+                <img src="starter/Starter Fried Wonton.jpg" alt="Fried Wonton">
                 <p>FRIED-WONTON</p>
             </div>
             <div class="image-item">
-                <img src="starter\Starter Risotto balls.jpg" alt="Image">
+                <img src="starter/Starter Risotto balls.jpg" alt="Risotto Balls">
                 <p>RISOTTO-BALLS</p>
             </div>
-            
-            
         </div>
         
-        
-        <div class="bar2">
-            <h2>MAIN COURSE</h2>
-        </div>
+        <div class="bar2"><h2>MAIN COURSE</h2></div>
         <div class="image-grid">
-            <div class="image-item">
-                <img src="maincourse\main course chicken momo.jpg" alt="Image">
-                <p>CHICKEN MOMO</p>
-            </div>
-            <div class="image-item">
-                <img src="maincourse\main course chinese steamed fish.jpg" alt="Image 1">
-                <p>CHINESE STEAMED FISH</p>
-            </div>
-            <div class="image-item">
-                <img src="maincourse\main course dimsum.jpg" alt="Image">
-                <p>DIMSUM</p>
-            </div>
-            <div class="image-item">
-                <img src="maincourse\main course egg-foo-young-.jpg" alt="Image">
-                <p>EGG-FOO-YOUNG</p>
-            </div>
-            <div class="image-item">
-                <img src="maincourse\main course EggFriedRice4.jpg" alt="Image">
-                <p>EGG-FRIED-RICE</p>
-            </div>
-            <div class="image-item">
-                <img src="maincourse\main course Grilled-Scallops-.jpg" alt="Image">
-                <p>GRILLED-SCALLOPS</p>
-            </div>
-            <div class="image-item">
-                <img src="maincourse\main course Spicy-Sichuan-Hot-Pot-.jpg" alt="Image">
-                <p>SPICY-SICHUAN-HOT-POT</p>
-            </div>
-            <div class="image-item">
-                <img src="maincourse\main course_Chinese-Chicken-Dumplings_550.jpg" alt="Image">
-                <p>CHINESE-CHICKEN-DUMPLINGS</p>
-            </div>
-            <div class="image-item">
-                <img src="maincourse\main course-Wonton-Soup-with-Sesame-Chili-Oil-1.jpg" alt="Image">
-                <p>WONTON-SOUP-WITH-SESAME-CHILI-OIL</p>
-            </div>
+            <div class="image-item"><img src="maincourse/main course chicken momo.jpg" alt="Momo"><p>CHICKEN MOMO</p></div>
+            <div class="image-item"><img src="maincourse/main course chinese steamed fish.jpg" alt="Fish"><p>CHINESE STEAMED FISH</p></div>
+            <div class="image-item"><img src="maincourse/main course dimsum.jpg" alt="Dimsum"><p>DIMSUM</p></div>
+            <div class="image-item"><img src="maincourse/main course egg-foo-young-.jpg" alt="Egg"><p>EGG-FOO-YOUNG</p></div>
+            <div class="image-item"><img src="maincourse/main course EggFriedRice4.jpg" alt="Rice"><p>EGG-FRIED-RICE</p></div>
+            <div class="image-item"><img src="maincourse/main course Grilled-Scallops-.jpg" alt="Scallops"><p>GRILLED-SCALLOPS</p></div>
         </div>
 
-        
-
-        <div class="bar2">
-            <h2>DESSERT</h2>
-        </div>
+        <div class="bar2"><h2>DESSERT</h2></div>
         <div class="image-grid">
-            <div class="image-item">
-                <img src="desert\Dessert Choco Flan.jpg" alt="Image">
-                <p>CHOCO-FLAN</p>
-            </div>
-
-            <div class="image-item">
-                <img src="desert\icecream cake.jpeg" alt="Image">
-                <p>ICECREAM-CAKE</p>
-            </div>
-
-            <div class="image-item">
-                <img src="desert\Dessert Dark chocolate Truffle.jpg" alt="Image 1">
-                <p>CHOCOLATE-TRUFFLE</p>
-            </div>
-            
+            <div class="image-item"><img src="desert/Dessert Choco Flan.jpg" alt="Flan"><p>CHOCO-FLAN</p></div>
+            <div class="image-item"><img src="desert/icecream cake.jpeg" alt="Cake"><p>ICECREAM-CAKE</p></div>
+            <div class="image-item"><img src="desert/Dessert Dark chocolate Truffle.jpg" alt="Truffle"><p>CHOCOLATE-TRUFFLE</p></div>
         </div>
+    </section>
 
-        <div class="bar2">
-            <h2>DRINKS</h2>
-        </div>
-        <div class="image-grid">
-            <div class="image-item">
-                <img src="drinks\Drinks Pearl Milk Tea.jpg" alt="Image">
-                <p>PEARL-MILK-TEA</p>
-            </div>
+    <section id="about" class="food-container">
+        <div class="bar1"><h1>ABOUT US</h1></div>
+    </section>
 
-            <div class="image-item">
-                <img src="drinks\Strawberry-Lemonade-20-720x405.jpg" alt="Image">
-                <p>STRAWBERRY-LEMONADE</p>
-            </div>
-
-            <div class="image-item">
-                <img src="drinks\Drinks Suam Mei Tang.jpg" alt="Image 1">
-                <p>SUAM-MEI-TANG</p>
-            </div>
-            
-        </div>
-
-
-      </section>
-      
-      <section class="food-container">
-        <div class="bar1">
-            <h1>ABOUT US</h1>
-        </div>
-      </section>
-
-      <section class="body3">
+    <section class="body3">
         <div class="video-container">
-            <video autoplay loop muted>
+            <video autoplay loop muted playsinline>
                 <source src="lunch_full.mp4" type="video/mp4">
-                <!-- Add other video formats for cross-browser compatibility if needed -->
             </video>
             <div class="overlay1">
-                <p>Our Chefs at Scrumptious excel at preparing authentic dishes that delight the taste buds. 
-            The crunchiness of the garlic pepper chicken, the spicy hot crab chilli, the crispy dimsums, the fish
-            cooked in a light sauce tempered in spices that cool the palate, the gently tossed noodles, glistening
-            with a rich sauce, the light fluffy fried rice, the piping hot soup ideal to whet your appetite will 
-            tempt you to sit back and enjoy a meal that takes you on a culinary journey from Sichuan to Jiangsu, 
-            to the bustling streets of Beijing.
-            
-            Today, Scrumptious has a countrywide presence in the form of 23 outlets across 10 cities in 
-            India - Mumbai, Pune, Kolkata, Bhubaneshwar, Chennai, Bangalore, Hyderabad, Ahmedabad, Vadodara,
-            Chandigarh</p>
+                <p>Our Chefs at Scrumptious excel at preparing authentic dishes from Sichuan to Beijing. Today, Scrumptious has 23 outlets across 10 cities in India.</p>
             </div>
         </div>
     </section>
 
     <section class="food-container">
-        <div class="bar1">
-            <h1>WHAT CUSTOMERS SAY!</h1>
-        </div>
-      </section>
-
-    <section class="body3">
+        <div class="bar1"><h1>WHAT CUSTOMERS SAY!</h1></div>
         <div class="review-grid">
-
-            <div class="review-item" data-rating="4">
-                <div class="reviewer-info">
-                    <div class="reviewer-image">
-                        <img src="reviewer1.jpeg" alt="Reviewer">
-                    </div>
-                    <div class="reviewer-details">
-                        <h3>Jenny Reddy</h3>
-                        <p>Hyderabad, INDIA</p>
-                    </div>
-                </div>
-                <div class="stars">
-                    <!-- Stars will be filled using JavaScript -->
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                </div>
-                <p class="review-text">Fantastic dining experience! Loved every dish. The service was impeccable.</p>
-            </div>
-
             <div class="review-item" data-rating="5">
                 <div class="reviewer-info">
-                    <div class="reviewer-image">
-                        <img src="reviewer2.jpg" alt="Reviewer">
-                    </div>
-                    <div class="reviewer-details">
-                        <h3>Jane Smith</h3>
-                        <p>Bangalore, INDIA</p>
-                    </div>
+                    <div class="reviewer-image"><img src="reviewer1.jpeg" alt="Reviewer"></div>
+                    <div class="reviewer-details"><h3>Jenny Reddy</h3><p>Hyderabad, INDIA</p></div>
                 </div>
                 <div class="stars">
-                    <!-- Stars will be filled using JavaScript -->
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
+                    <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
                 </div>
-                <p class="review-text">The best restaurant in town. The food is exquisite and the ambiance is magical.</p>
+                <p class="review-text">Fantastic dining experience! Loved every dish.</p>
             </div>
-
-
-            <div class="review-item" data-rating="5">
-                <div class="reviewer-info">
-                    <div class="reviewer-image">
-                        <img src="reviewer3.jpeg" alt="Reviewer">
-                    </div>
-                    <div class="reviewer-details">
-                        <h3>Sapna Garbate</h3>
-                        <p>Mumbai, INDIA</p>
-                    </div>
-                </div>
-                <div class="stars">
-                    <!-- Stars will be filled using JavaScript -->
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                </div>
-                <p class="review-text">The best restaurant you know. The food is super tasty and the customer service is mind blowing.</p>
             </div>
-
-            <div class="review-item" data-rating="4">
-                <div class="reviewer-info">
-                    <div class="reviewer-image">
-                        <img src="reviewer4.jpg" alt="Reviewer">
-                    </div>
-                    <div class="reviewer-details">
-                        <h3>Mayank Acharya</h3>
-                        <p>Ahmedabad, INDIA</p>
-                    </div>
-                </div>
-                <div class="stars">
-                    <!-- Stars will be filled using JavaScript -->
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                </div>
-                <p class="review-text">The best restaurant . The food is very tasty and the colours are superb.</p>
-            </div>
-
-            <div class="review-item" data-rating="4">
-                <div class="reviewer-info">
-                    <div class="reviewer-image">
-                        <img src="reviewer5.jpeg" alt="Reviewer">
-                    </div>
-                    <div class="reviewer-details">
-                        <h3>Mohit Basu</h3>
-                        <p>Kolkata, INDIA</p>
-                    </div>
-                </div>
-                <div class="stars">
-                    <!-- Stars will be filled using JavaScript -->
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                </div>
-                <p class="review-text">Amazing dining experience! Loved every dish. The service was awesome.</p>
-            </div>
-
-            <div class="review-item" data-rating="5">
-                <div class="reviewer-info">
-                    <div class="reviewer-image">
-                        <img src="reviewer6.jpeg" alt="Reviewer">
-                    </div>
-                    <div class="reviewer-details">
-                        <h3>Rahul Tandon</h3>
-                        <p>Chandigarh, INDIA</p>
-                    </div>
-                </div>
-                <div class="stars">
-                    <!-- Stars will be filled using JavaScript -->
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                </div>
-                <p class="review-text">The best restaurant ever. The food is very tasty and it smells really nice.</p>
-            </div>
-
-        </div>
-          
     </section>
 
     <footer>
         <ul class="social-icons">
-            <li><a href="#"><img width="50" height="50" src="instagram.png" alt="Instagram"></a></li>
-            <li><a href="#"><img width="50" height="50" src="facebook.png" alt="Facebook"></a></li>
-            <li><a href="#"><img width="50" height="50" src="twitter.png" alt="Twitter"></a></li>
+            <li><a href="#"><img width="40" height="40" src="instagram.png" alt="IG"></a></li>
+            <li><a href="#"><img width="40" height="40" src="facebook.png" alt="FB"></a></li>
+            <li><a href="#"><img width="40" height="40" src="twitter.png" alt="TW"></a></li>
         </ul>
         <div class="contact-info">
-            <p>Batanagar, Kolkata</p>
-            <p>Email: info@scrumptious.com</p>
-            <p>Phone: (+91) 123-456-7890</p>
+            <p>Batanagar, Kolkata | info@scrumptious.com | (+91) 123-456-7890</p>
         </div>
     </footer>
 
