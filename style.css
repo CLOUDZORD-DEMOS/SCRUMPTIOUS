@@ -8,13 +8,16 @@
 body {
     background-color: black;
     color: white;
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
 }
 
+/* Header & Nav */
 header {
     background-color: black;
-    padding: 15px 0;
-    border-bottom: 1px solid #333;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav {
@@ -24,53 +27,28 @@ nav {
 }
 
 .logo {
-    font-size: 30px;
+    color: crimson;
+    font-size: 28px;
     font-weight: bold;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 25px;
 }
 
-.nav-links a {
-    color: white;
-}
+.nav-links a { color: white; font-size: 18px; }
 
-/* Original Menu Bars */
-.bar1 {
-    background-color: rgb(252, 17, 17);
-    color: white;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-}
-
-.bar2 {
-    background-color: black;
-    color: white;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: cursive;
-    font-size: 20px;
-}
-
-/* Original Video Layout */
+/* Video Containers */
 .body3 {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 600px;
+    overflow: hidden;
 }
 
-.video-container {
-    width: 100%;
-    height: 100%;
-}
+.video-container { width: 100%; height: 100%; }
 
 video {
     width: 100%;
@@ -86,61 +64,86 @@ video {
     height: 100%;
     background-color: rgba(0,0,0,0.5);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
 }
 
-/* THE FIXES: Layout alignment without breaking sizes */
+.overlay h1 { font-size: 60px; color: white; }
+.overlay1 p { max-width: 800px; margin-top: 20px; font-size: 20px; padding: 0 20px; }
+
+/* Menu Styling */
+.bar1 {
+    background-color: crimson;
+    color: white;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.bar2 {
+    background-color: #111;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-family: cursive;
+}
+
+/* THE GRID FIX: This stops images from showing one by one */
 .image-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 30px;
+    padding: 40px 20px;
 }
 
 .image-item {
+    width: 350px;
     text-align: center;
-    width: 350px; /* Kept your preferred item size */
+    position: relative;
 }
 
 .image-item img {
     width: 100%;
     height: 250px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
-/* Review Alignment Fix */
+.image-item p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Reviews Styling */
 .review-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
-    padding: 40px;
+    gap: 20px;
+    padding: 40px 10px;
 }
 
 .review-item {
-    width: 350px;
-    background: #111;
-    padding: 20px;
-    border-radius: 10px;
+    width: 380px;
+    background-color: #111;
+    padding: 25px;
+    border-radius: 15px;
 }
 
 .reviewer-info {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: 10px;
 }
 
-/* THE PHOTO FIX: Same size circles */
 .reviewer-image img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    object-fit: cover; /* Prevents squashing */
+    object-fit: cover; /* Keeps all photos same circle shape */
 }
 
 .stars {
@@ -152,16 +155,16 @@ video {
 .star {
     width: 15px;
     height: 15px;
-    background-color: #444;
+    background-color: #333;
     border-radius: 50%;
 }
 
 .star.filled {
     background-color: gold;
-    box-shadow: 0 0 10px gold;
+    box-shadow: 0 0 8px gold;
 }
 
-/* FOOTER FIX: Side-by-side icons */
+/* Footer Fix */
 footer {
     padding: 40px 0;
     text-align: center;
@@ -169,18 +172,16 @@ footer {
 }
 
 .social-icons {
-    display: flex;         /* Row layout */
+    display: flex;
     justify-content: center;
     list-style: none;
-    gap: 30px;
+    gap: 40px;
     margin-bottom: 20px;
 }
 
 .social-icons img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
-.contact-info p {
-    color: #ccc;
-}
+.contact-info p { color: #888; margin: 5px 0; }
