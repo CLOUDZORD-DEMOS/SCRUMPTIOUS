@@ -82,7 +82,7 @@ video {
 }
 
 .bar1 {
-    background-color: crimson;
+    background-color: none;
     color: white;
     height: 80px;
     display: flex;
@@ -182,3 +182,4 @@ footer {
 .contact-info p {
     color: #999;
 }
+
