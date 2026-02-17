@@ -1,28 +1,31 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Mobile Menu Toggle
+    const menu = document.getElementById("mobile-menu");
+    const navLinks = document.querySelector(".nav-links");
+
+    if (menu) {
+        menu.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    }
+
+    // Star Animation Logic
     function animateStars() {
         const reviewItems = document.querySelectorAll(".review-item");
-
         reviewItems.forEach((item) => {
             const stars = item.querySelectorAll(".star");
-            stars.forEach((star) => {
-                star.classList.remove("filled");
-            });
-
             const rating = parseFloat(item.dataset.rating);
-
             stars.forEach((star, index) => {
+                star.classList.remove("filled");
                 setTimeout(() => {
                     if (index + 1 <= rating) {
                         star.classList.add("filled");
                     }
-                }, index * 300); // Adjust the duration here (milliseconds)
+                }, index * 300);
             });
         });
     }
 
-    // Call the animateStars function initially
     animateStars();
-
-    // Call the animateStars function every n seconds (n000 milliseconds)
-    setInterval(animateStars, 3000);
+    setInterval(animateStars, 5000);
 });
