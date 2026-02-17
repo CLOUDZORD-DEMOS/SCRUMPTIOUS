@@ -1,4 +1,3 @@
-/* GLOBAL RESET */
 * {
     margin: 0;
     padding: 0;
@@ -6,189 +5,182 @@
     text-decoration: none;
 }
 
-html { scroll-behavior: smooth; }
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
-    line-height: 1.6;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* NAVIGATION */
 header {
-    background: #000;
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid #222;
+    background-color: black;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .logo {
-    font-size: 1.8rem;
+    font-size: 30px;
     font-weight: bold;
-    color: crimson;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 25px;
+    gap: 20px;
 }
 
 .nav-links a {
-    color: #fff;
-    font-size: 1rem;
-    transition: 0.3s;
+    color: white;
 }
 
-.nav-links a:hover { color: crimson; }
-
-/* HERO SECTION */
-.hero {
-    position: relative;
-    height: 70vh;
+/* Original Menu Bars */
+.bar1 {
+    background-color: rgb(252, 17, 17);
+    color: white;
+    height: 80px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    overflow: hidden;
+    align-items: center;
+    font-size: 25px;
 }
 
-.hero-video {
-    position: absolute;
+.bar2 {
+    background-color: black;
+    color: white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+/* Original Video Layout */
+.body3 {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.video-container {
+    width: 100%;
+    height: 100%;
+}
+
+video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
 }
 
-.hero-overlay {
-    text-align: center;
-    background: rgba(0,0,0,0.5);
-    padding: 30px;
-    border-radius: 10px;
-}
-
-.hero-overlay h1 { font-size: 3.5rem; }
-
-/* GRID SYSTEM */
-.section { padding: 60px 0; }
-.section-title { text-align: center; font-size: 2.2rem; margin-bottom: 40px; color: crimson; }
-.category-title { margin: 30px 0 15px; border-left: 5px solid crimson; padding-left: 15px; font-size: 1.5rem; }
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-}
-
-/* FOOD CARDS */
-.food-card {
-    background: #111;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: 0.3s;
-    border: 1px solid #222;
-}
-
-.food-card:hover { transform: translateY(-5px); border-color: crimson; }
-
-.food-card img {
+.overlay, .overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 220px;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* THE FIXES: Layout alignment without breaking sizes */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-item {
+    text-align: center;
+    width: 350px; /* Kept your preferred item size */
+}
+
+.image-item img {
+    width: 100%;
+    height: 250px;
     object-fit: cover;
 }
 
-.food-card h4 { padding: 15px; text-align: center; font-size: 1.1rem; }
-
-/* ABOUT SECTION */
-.about-split {
+/* Review Alignment Fix */
+.review-grid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+.review-item {
+    width: 350px;
     background: #111;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.about-video, .about-content {
-    flex: 1;
-    min-width: 320px;
-    height: 450px;
-}
-
-.about-video video { width: 100%; height: 100%; object-fit: cover; }
-.about-content { padding: 50px; display: flex; flex-direction: column; justify-content: center; }
-
-/* REVIEWS */
-.review-card {
-    background: #111;
-    padding: 25px;
-    border-radius: 15px;
-    border: 1px solid #333;
-}
-
-.reviewer-header {
+.reviewer-info {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-/* FIX: Forces all photos to be same size circles */
-.reviewer-header img {
-    width: 65px;
-    height: 65px;
+/* THE PHOTO FIX: Same size circles */
+.reviewer-image img {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid crimson;
+    object-fit: cover; /* Prevents squashing */
 }
 
-.stars { display: flex; gap: 5px; margin-bottom: 10px; }
-.star { width: 14px; height: 14px; background: #444; border-radius: 50%; transition: 0.5s; }
-.star.filled { background: #fecd05; box-shadow: 0 0 8px #fecd05; }
-
-/* FOOTER FIX */
-footer {
-    padding: 50px 0;
-    background: #000;
-    text-align: center;
-    border-top: 1px solid #222;
-}
-
-.footer-content {
+.stars {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.star {
+    width: 15px;
+    height: 15px;
+    background-color: #444;
+    border-radius: 50%;
+}
+
+.star.filled {
+    background-color: gold;
+    box-shadow: 0 0 10px gold;
+}
+
+/* FOOTER FIX: Side-by-side icons */
+footer {
+    padding: 40px 0;
+    text-align: center;
+    background: #000;
 }
 
 .social-icons {
-    display: flex;
+    display: flex;         /* Row layout */
+    justify-content: center;
     list-style: none;
-    gap: 20px; /* Space between icons */
+    gap: 30px;
+    margin-bottom: 20px;
 }
 
 .social-icons img {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
 }
 
-.contact-info p { color: #888; font-size: 0.9rem; }
-
-/* MOBILE RESPONSIVE */
-@media (max-width: 768px) {
-    .hero-overlay h1 { font-size: 2.2rem; }
-    .nav-links { gap: 15px; font-size: 0.8rem; }
-    .about-content { padding: 25px; height: auto; }
+.contact-info p {
+    color: #ccc;
 }
